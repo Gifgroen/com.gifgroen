@@ -1,0 +1,18 @@
+{
+  "name": "gifgroen.com",
+  "description": "Personal website",
+  "authors": [
+    "Karsten Westra <karstenwestra@gmail.com>"
+  ],
+  "private": true,
+  "version": "0.0.0",
+  "dependencies": {
+    "iron-flex-layout": "PolymerElements/iron-flex-layout#1.0.1",
+    "polymer": "#1.0.5",
+    "webcomponentsjs": "#0.7.5"
+  },
+  "devDependencies": {
+    "web-component-tester": "*",
+    "test-fixture": "PolymerElements/test-fixture#^1.0.0"
+  }
+}

@@ -1,0 +1,36 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #0f0;
+}
+.item {
+
+}
+
+.logo {
+    width: auto;
+    padding: 0;
+    height: 44px;
+    line-height: 44px;
+    text-align:center;
+    margin: 16px;
+}
+.flex {
+    display: block;
+    width: 100%;
+}
+/* Right menu */
+div.menu {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 16px;
+    height: 44px;
+    line-height: 44px;
+    width: 42%;
+}
+div.menu > div {
+    display: inline-block;
+    width: 32%;
+    height: 100%;
+    text-align:center;
+}

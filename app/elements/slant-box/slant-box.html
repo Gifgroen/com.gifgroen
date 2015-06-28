@@ -1,0 +1,35 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="slant-box">
+    <style>
+        :host {
+            display: block;
+        }
+        .se-container {
+            background: rgb(218, 219, 206);
+            margin: -30px -10px;
+            height: 124px;
+            transform: rotate(-2deg);
+            box-shadow: 5px 5px 10px #cccccc;
+        }
+        .content {
+            padding: 30px 10px;
+            @apply(--layout-horizontal);
+            transform: rotate(2deg);
+        }
+    </style>
+    <template>
+        <section class="se-container">
+            <div class="content">
+                <content></content>
+            </div>
+        </section>
+    </template>
+</dom-module>
+<script>
+    (function() {
+        Polymer({
+            is: 'slant-box',
+        });
+    })();
+</script>
