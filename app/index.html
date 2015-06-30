@@ -19,7 +19,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <title>gifgroen.com</title>
 
   <!-- Chrome for Android theme color -->
-  <meta name="theme-color" content="#00FF00">
+  <meta name="theme-color" content="#FFFFFF">
 
   <!-- Web Application Manifest -->
   <link rel="manifest" href="manifest.json">
@@ -56,13 +56,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <body unresolved class="fullbleed">
     <span id="browser-sync-binding"></span>
-    <slant-box>
-        <h1 class="logo">Gifgroen.com</h1>
-        <div class="flex"></div>
-        <div class="menu">
-            <div>Projects</div>
-            <div>About</div>
-            <div>Blog</div>
+    <slant-box id="header">
+        <div class="item"><h1>Gifgroen.com</h1></div>
+        <div class="item flex"></div>
+        <div class="item layout horizontal">
+            <div class="foo-menu-item">Projects</div>
+            <div class="foo-menu-item">About</div>
+            <div class="foo-menu-item">Blog</div>
         </div>
     </slant-box>
     <!-- build:js scripts/app.js -->

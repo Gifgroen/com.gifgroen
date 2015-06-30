@@ -2,35 +2,18 @@ body {
     padding: 0;
     margin: 0;
     background: #0f0;
-}
-.item {
-
+    overflow:hidden;
 }
 
-.logo {
-    width: auto;
-    padding: 0;
-    height: 44px;
-    line-height: 44px;
-    text-align:center;
+slant-box#header .foo-menu-item {
+    background: #eeeeee;
+    border-radius:10px;
     margin: 16px;
+    padding: 6px;
+    height: 24px;
+    line-height: 24px;
 }
-.flex {
-    display: block;
-    width: 100%;
-}
-/* Right menu */
-div.menu {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 16px;
-    height: 44px;
-    line-height: 44px;
-    width: 42%;
-}
-div.menu > div {
-    display: inline-block;
-    width: 32%;
-    height: 100%;
-    text-align:center;
+slant-box#header h1 {
+    padding: 16px;
+    margin:0;
 }

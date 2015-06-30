@@ -6,15 +6,24 @@
             display: block;
         }
         .se-container {
-            background: rgb(218, 219, 206);
-            margin: -30px -10px;
+            background: white;
+            margin: -36px -10px;
             height: 124px;
+            -ms-transform: rotate(-2deg); /* IE 9 */
+            -webkit-transform: rotate(-2deg); /* Safari */
+            -moz-transform: rotate(-2deg); /* Firefox */
+            -ie-transform: rotate(-2deg); /* IE */
             transform: rotate(-2deg);
             box-shadow: 5px 5px 10px #cccccc;
         }
         .content {
-            padding: 30px 10px;
+            padding: 36px 10px;
             @apply(--layout-horizontal);
+
+            -ms-transform: rotate(2deg); /* IE 9 */
+            -webkit-transform: rotate(2deg); /* Safari */
+            -moz-transform: rotate(2deg); /* Firefox */
+            -ie-transform: rotate(2deg); /* IE */
             transform: rotate(2deg);
         }
     </style>
