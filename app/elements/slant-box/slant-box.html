@@ -3,33 +3,46 @@
 <dom-module id="slant-box">
     <style>
         :host {
-            display: block;
+            /*display: block;*/
+            /*margin:0;*/
+            /*padding: 0;*/
         }
         .se-container {
             background: white;
-            margin: -36px -10px;
-            height: 124px;
+            height: 100px;
+
             -ms-transform: rotate(-2deg); /* IE 9 */
             -webkit-transform: rotate(-2deg); /* Safari */
             -moz-transform: rotate(-2deg); /* Firefox */
             -ie-transform: rotate(-2deg); /* IE */
             transform: rotate(-2deg);
+
+            -ms-transform-origin: left center;
+            -webkit-transform-origin: left center;
+            -moz-transform-origin: left center;
+            -ie-transform-origin: left center;
+            -ms-transform-origin: left left;
+
             box-shadow: 5px 5px 10px #cccccc;
         }
         .content {
-            padding: 36px 10px;
-            @apply(--layout-horizontal);
-
+            /*background: white;*/
             -ms-transform: rotate(2deg); /* IE 9 */
             -webkit-transform: rotate(2deg); /* Safari */
             -moz-transform: rotate(2deg); /* Firefox */
             -ie-transform: rotate(2deg); /* IE */
             transform: rotate(2deg);
+
+            -ms-transform-origin: left center;
+            -webkit-transform-origin: left center;
+            -moz-transform-origin: left center;
+            -ie-transform-origin: left center;
+            -ms-transform-origin: left left;
         }
     </style>
     <template>
         <section class="se-container">
-            <div class="content">
+            <div class="content flex layout horizontal">
                 <content></content>
             </div>
         </section>

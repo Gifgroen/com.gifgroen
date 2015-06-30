@@ -1,19 +1,14 @@
 body {
-    padding: 0;
-    margin: 0;
     background: #0f0;
-    overflow:hidden;
+    overflow: hidden;
+}
+slant-box#header h1 {
+    margin: 0;
+    padding: 0;
 }
 
 slant-box#header .foo-menu-item {
     background: #eeeeee;
-    border-radius:10px;
-    margin: 16px;
-    padding: 6px;
-    height: 24px;
-    line-height: 24px;
-}
-slant-box#header h1 {
-    padding: 16px;
-    margin:0;
+    margin: 10px;
+    padding: 10px;
 }
