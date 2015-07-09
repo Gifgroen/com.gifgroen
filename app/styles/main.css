@@ -1,14 +1,27 @@
-body {
-    background: #0f0;
-    overflow: hidden;
-}
-slant-box#header h1 {
+html {
+    font-family: 'Roboto Slab', serif;
     margin: 0;
     padding: 0;
 }
-
-slant-box#header .foo-menu-item {
-    background: #eeeeee;
+#header h1 {
+    margin: 0;
+    padding-left: 10px;
+    color: white;
+    margin: 16px;
+}
+/* Menu items right*/
+#menu {
     margin: 10px;
-    padding: 10px;
+}
+#menu div {
+    padding: 4px;
+    margin: 8px;
+    color: white;
+}
+
+.slider {
+    /*margin-top: -22px;*/
+}
+.slider .content {
+    margin-top: 22px;
 }

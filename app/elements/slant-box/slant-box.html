@@ -3,49 +3,40 @@
 <dom-module id="slant-box">
     <style>
         :host {
-            /*display: block;*/
-            /*margin:0;*/
-            /*padding: 0;*/
+            display: block;
         }
-        .se-container {
-            background: white;
-            height: 100px;
-
-            -ms-transform: rotate(-2deg); /* IE 9 */
-            -webkit-transform: rotate(-2deg); /* Safari */
-            -moz-transform: rotate(-2deg); /* Firefox */
-            -ie-transform: rotate(-2deg); /* IE */
-            transform: rotate(-2deg);
-
-            -ms-transform-origin: left center;
-            -webkit-transform-origin: left center;
-            -moz-transform-origin: left center;
-            -ie-transform-origin: left center;
-            -ms-transform-origin: left left;
-
-            box-shadow: 5px 5px 10px #cccccc;
+        .header {
+            z-index: 1;
+            position: relative;
         }
-        .content {
-            /*background: white;*/
-            -ms-transform: rotate(2deg); /* IE 9 */
-            -webkit-transform: rotate(2deg); /* Safari */
-            -moz-transform: rotate(2deg); /* Firefox */
-            -ie-transform: rotate(2deg); /* IE */
-            transform: rotate(2deg);
+        .header .skew {
+            height: 90px;
+        }
+        .header .skew:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            overflow: visible;
+            width: 100%;
+            height: 200px;
+            background: #00ff00;
 
-            -ms-transform-origin: left center;
-            -webkit-transform-origin: left center;
-            -moz-transform-origin: left center;
-            -ie-transform-origin: left center;
-            -ms-transform-origin: left left;
+            z-index: -1;
+
+            -webkit-transform: skewY(-2deg);
+            -moz-transform: skewY(-2deg);
+            -ms-transform: skewY(-2deg);
+            -o-transform: skewY(-2deg);
+            transform: skewY(-2deg);
         }
     </style>
     <template>
-        <section class="se-container">
-            <div class="content flex layout horizontal">
+        <header class="header" id="header">
+            <div class="skew layout horizontal">
                 <content></content>
             </div>
-        </section>
+        </header>
     </template>
 </dom-module>
 <script>
