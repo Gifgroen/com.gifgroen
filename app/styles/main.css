@@ -3,25 +3,22 @@ html {
     margin: 0;
     padding: 0;
 }
-#header h1 {
-    margin: 0;
-    padding-left: 10px;
-    color: #0f0;
+slant-box h1 {
     margin: 16px;
+    color: #00ff00;
+    padding: 0;
 }
-/* Menu items right*/
-#menu {
+paper-menu#menu {
     margin: 10px;
 }
-#menu div {
-    padding: 4px;
+paper-menu#menu paper-item {
+    display: inline;
+}
+paper-icon-button#menu-icon {
+    height: 24px;
     margin: 8px;
-    color: #0f0;
+    color: #00ff00;
 }
-
-.slider {
-    /*margin-top: -22px;*/
-}
-.slider .content {
-    margin-top: 22px;
+.content {
+    /*margin-top: 44px;*/
 }
