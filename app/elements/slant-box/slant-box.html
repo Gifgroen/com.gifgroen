@@ -3,39 +3,42 @@
 <dom-module id="slant-box">
     <style>
         :host {
-            display: block;
-        }
-        .skew {
+            width: 100%;
+            height: var(--slant-box-height, 56px);
             z-index: 1;
             position: relative;
-            height: 58px;
         }
-        .skew:after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
+        .header {
+            background: var(--slant-box-background);
+
+            height: inherit;
             width: 100%;
-            height: 200px;
-            background: #fbfbfb;
-            box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.5);
-            z-index: -1;
 
-            -webkit-transform-origin: right bottom;
-            -moz-transform-origin: right bottom;
-            -ms-transform-origin: right bottom;
-            -o-transform-origin: right bottom;
-            transform-origin: right bottom;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .skew {
+            height: inherit;
 
-            -webkit-transform: skewY(-2deg);
-            -moz-transform: skewY(-2deg);
-            -ms-transform: skewY(-2deg);
-            -o-transform: skewY(-2deg);
-            transform: skewY(-2deg);
+            -webkit-transform: var(--slant-box-skew-angle);
+            -moz-transform: var(--slant-box-skew-angle);
+            -ms-transform: var(--slant-box-skew-angle);
+            -o-transform: var(--slant-box-skew-angle);
+            transform: var(--slant-box-skew-angle);
+
+            -webkit-transform-origin: var(--slant-box-skew-origin);
+            -moz-transform-origin: var(--slant-box-skew-origin);
+            -ms-transform-origin: var(--slant-box-skew-origin);
+            -o-transform-origin: var(--slant-box-skew-origin);
+            transform-origin: var(--slant-box-skew-origin);
+
+            box-shadow: var(--slant-box-shadow);
         }
     </style>
     <template>
-        <div class="skew layout horizontal">
+        <div class="header skew"></div>
+        <div class="header layout horizontal">
             <content></content>
         </div>
     </template>
@@ -43,7 +46,7 @@
 <script>
     (function() {
         Polymer({
-            is: 'slant-box',
+            is: 'slant-box'
         });
     })();
 </script>

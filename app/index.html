@@ -1,92 +1,86 @@
-<!--
-@license
-Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
--->
-
 <!DOCTYPE html>
-<html lang="">
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="Personal website">
-  <meta name="viewport" content="width=device-width, height=device-height">
+    <meta charset="utf-8">
+    <meta name="description" content="Personal website">
+    <meta name="viewport" content="width=device-width, height=device-height">
 
-  <title>gifgroen.com</title>
+    <title>gifgroen.com</title>
 
-  <!-- Chrome for Android theme color -->
-  <meta name="theme-color" content="#FFFFFF">
+    <!-- Chrome for Android theme color -->
+    <meta name="theme-color" content="#FFFFFF">
 
-  <!-- Web Application Manifest -->
-  <link rel="manifest" href="manifest.json">
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
 
-  <!-- Tile color for Win8 -->
-  <meta name="msapplication-TileColor" content="#00ff00">
+    <!-- Tile color for Win8 -->
+    <meta name="msapplication-TileColor" content="#00ff00">
 
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="Polymer Starter Kit">
-  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Polymer Starter Kit">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
-  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
 
-  <!-- Tile icon for Win8 (144x144) -->
-  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <!-- Tile icon for Win8 (144x144) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
 
-  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <!-- Roboto Slab font for pretty text -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 
-  <!-- build:css styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
-  <!-- endbuild-->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild-->
 
-  <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
-  <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
-  <!-- endbuild -->
+    <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
+    <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <!-- endbuild -->
 
-  <!-- will be replaced with elements/elements.vulcanized.html -->
-  <link rel="import" href="elements/elements.html">
-  <!-- endreplace-->
+    <!-- will be replaced with elements/elements.vulcanized.html -->
+    <link rel="import" href="elements/elements.html">
+    <!-- endreplace-->
 
-  <style>
-
-  </style>
+    <style>
+        iron-image#my-picture {
+            margin: -58px 16px;
+            background: #ff00ff;
+        }
+        div#bio {
+            width: 70%;
+        }
+    </style>
 </head>
-
 <body unresolved class="fullbleed layout vertical">
     <span id="browser-sync-binding"></span>
     <paper-header-panel>
         <slant-box class="paper-header">
             <h1>Gifgroen.com</h1>
             <span class="flex"></span>
-            <gg-menu id="menu" query="max-width: 600px">
-                <paper-item>Projects</paper-item>
-                <paper-item>About</paper-item>
-                <paper-item>Blog</paper-item>
+            <gg-menu id="menu" query="max-width: 500px">
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
             </gg-menu>
         </slant-box>
-        <div class="content">
-            <img style="width: 100%; height: 300px;"
-                    src="http://www.engraversnetwork.com/files/placeholder.jpg"
-                    alt="large theater piece">
-            <p>Lorizzle we gonna chung dolizzle mammasay mammasa mamma oo sa amizzle, consectetuer crunk uhuh ... yih!. Nullam sizzle velit, crunk volutpizzle, suscipizzle phat, check out this vel, shizzlin dizzle. Pellentesque get down get down fizzle. For sure eros. I saw beyonces tizzles and my pizzle went crizzle izzle crunk dapibus boofron tempizzle yo. Maurizzle sizzle nibh izzle turpizzle. Brizzle izzle tortor. Pellentesque eleifend check out this nisi. In fo habitasse phat dictumst. Daahng dawg sure. Curabitizzle things urna, pretizzle the bizzle, mattis ac, eleifend gangster, nunc. Bizzle suscipit. Shizzlin dizzle mammasay mammasa mamma oo sa velit sizzle daahng dawg.</p>
-
-            <p>Praesent mah nizzle mi nizzle maurizzle gangsta crazy. Aliquam lacinia viverra lectizzle. Fizzle izzle fo shizzle et leo sodalizzle euismod. I'm in the shizzle ass, mauris fo shizzle dapibizzle sheezy, nulla shizznit that's the shizzle metus, izzle shiznit augue dui izzle dizzle. Vivamizzle i saw beyonces tizzles and my pizzle went crizzle lacizzle black. Sure arcu owned, fermentizzle pot ma nizzle, phat izzle, placerat izzle, mauris. Izzle vehicula laorizzle funky fresh. Vestibulum pizzle crackalackin, doggy izzle, fo izzle, that's the shizzle a, my shizz. Morbi shit placerizzle bow wow wow. Maecenas malesuada erizzle own yo' erat. Fusce crackalackin sem, egestas fo shizzle my nizzle, accumsan sheezy, shut the shizzle up its fo rizzle, neque. Rizzle iaculis mofo da bomb daahng dawg mofo sodales. Cool sagittizzle, nulla gangster sollicitudizzle fo shizzle, pot quam mah nizzle erat, vitae dizzle augue for sure vitae arcu. Etiam vehicula lacizzle. Fizzle break it down mi. Dizzle shizzlin dizzle check it out. Vestibulizzle a gizzle. Sizzle dawg erizzle, brizzle doggy, tempizzle izzle, away check out this, pede. Nunc things. Nulla dawg eros, tristique sizzle amet, ultricizzle rizzle, dawg nizzle, augue.</p>
-
-            <p>Yo nizzle go to hizzle egizzle you son of a bizzle consectetuer pretium. Vivamus shut the shizzle up amizzle mammasay mammasa mamma oo sa. Nam fo shizzle nisl izzle gangsta mah nizzle rizzle. Praesent suscipizzle viverra ipsum. Curabitizzle in arcu. Stuff rizzle enizzle, auctizzle sed, congue sheezy, uhuh ... yih! nizzle, libero. Nullam vitae pede nizzle erizzle uhuh ... yih! we gonna chung. Quisque pede for sure, congue pulvinizzle, bizzle away, mollizzle check it out that's the shizzle, yo mamma. Fizzle izzle dui. Ghetto bizzle gangster, elementum consectetuer, sollicitudizzle in, consequizzle , turpizzle. Quisque a gizzle eu mi rutrum pimpin'. Tellivizzle cool sagittizzle ipsum. Phat habitant morbi break yo neck, yall shit boofron netus shizzlin dizzle its fo rizzle shizznit ac turpis fo shizzle my nizzle. Nizzle ghetto. Get down get down elementizzle. Sure erizzle pimpin', rizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle, suscipit check it out, porta pot, nisl. Doggy sagittizzle gravida pot.</p>
-
-            <p>In gravida ligula da bomb pizzle. Hizzle go to hizzle. Etiam tempor. Donizzle in izzle away erizzle fizzle vehicula. Duis hizzle the bizzle. Fo shizzle its fo rizzle dope izzle lacus. Praesent a check it out vitae fizzle for sure ullamcorper. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle funky fresh risus. Dang lobortis shiznit we gonna chung felis. Morbi eget justo. Pimpin' eu mammasay mammasa mamma oo sa in da bomb you son of a bizzle check out this. Morbi placerat, arcu non euismizzle porta, nisl i saw beyonces tizzles and my pizzle went crizzle adipiscing izzle, cursizzle ornare mi yo sizzle sizzle fo shizzle. Yo turpizzle. Things ante ipsum we gonna chung you son of a bizzle faucibizzle sheezy i'm in the shizzle et ultrices crazy owned Gizzle; Vestibulum gangsta, cool laoreet owned hendrerit, risus mah nizzle gravida nunc, a crunk urna metus quis nibh. Dizzle pretium gizzle nizzle nulla. Phasellus accumsan. Break yo neck, yall boom shackalack natoque bling bling et magnizzle dizzle parturient sizzle, nascetur ridiculizzle mizzle. Gizzle et massa gangster quizzle ultricizzle fizzle. Donizzle i'm in the shizzle i saw beyonces tizzles and my pizzle went crizzle.</p>
-
-            <p>Nunc commodo check out this izzle urna. Nullizzle own yo'. Vestibulizzle shit laoreet dui. Quisque shut the shizzle up bling bling yippiyo eu leo volutpat gangster. Suspendisse get down get down. Nunc at sizzle vitae purizzle hizzle aliquam. Break it down boom shackalack yo mamma ante. In interdum stuff izzle fo shizzle. Quisque dang. Nizzle vitae fo shizzle sheezy diam shiz viverra. My shizz shizzlin dizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle quis a i saw beyonces tizzles and my pizzle went crizzle boom shackalack pulvinar. Nullizzle sagittis break it down i'm in the shizzle velizzle. Cras semper owned tellizzle. Etiam pretizzle shiz away dui. Cool rutrum fizzle purizzle.</p>
-
-            <p>I saw beyonces tizzles and my pizzle went crizzle izzle ligula. Aliquam porta commodo tellus. Aenizzle viverra, boom shackalack izzle vulputate fo shizzle, libero doggy hendrerit leo, bow wow wow fizzle gangster check out this izzle nunc. Donec crunk dolizzle. Vestibulum quizzle felizzle. Shiznit elementum fo erizzle. Integer i saw beyonces tizzles and my pizzle went crizzle sizzle, shizzlin dizzle izzle, volutpizzle rizzle, auctor egizzle, fizzle. Sizzle fizzle. Gangsta we gonna chung. Curabitizzle owned amizzle shiznit dizzle crazy blandit away. Quisque stuff stuff sizzle shizznit get down get down. Aenizzle tempus dignissizzle felis.</p>
+        <div class="content layout vertical">
+            <content-rotator></content-rotator>
+            <slant-box id="about">
+                <iron-image
+                    id="my-picture"
+                    src="../../images/wallhaven.jpg"
+                    style="width: 300px; height 400px;"
+                    sizing="cover"
+                    preload fade>
+                </iron-image>
+                <div id="bio">
+                    Lorizzle we gonna chung dolizzle mammasay mammasa mamma oo sa amizzle, consectetuer crunk uhuh ... yih!. Nullam sizzle velit, crunk volutpizzle, suscipizzle phat, check out this vel, shizzlin dizzle. Pellentesque get down get down fizzle. For sure eros. I saw beyonces tizzles and my pizzle went crizzle izzle crunk dapibus boofron tempizzle yo. Maurizzle sizzle nibh izzle turpizzle. Brizzle izzle tortor.
+                </div>
+            </slant-box>
         </div>
     </paper-header-panel>
 
