@@ -4,21 +4,7 @@ html {
     padding: 0;
 }
 slant-box h1 {
-    margin: 16px;
+    margin-top: 1%;
+    margin-left: 1.8%;
     color: #00ff00;
-    padding: 0;
-}
-paper-menu#menu {
-    margin: 10px;
-}
-paper-menu#menu paper-item {
-    display: inline;
-}
-paper-icon-button#menu-icon {
-    height: 24px;
-    margin: 8px;
-    color: #00ff00;
-}
-.content {
-    /*margin-top: 44px;*/
 }

@@ -1,0 +1,53 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-media-query/iron-media-query.html">
+
+<dom-module id="gg-menu">
+    <style>
+        :host {
+            display: block;
+            margin: 0 8px;
+        }
+        paper-menu-button ::content paper-item {
+            display: flex !important;
+        }
+        ::content paper-item {
+            display: inline !important;
+            line-height: 58px !important;
+        }
+        ::content paper-item {
+            font-size: 18px;
+            color: #666666;
+        }
+        ::content paper-item:hover {
+            color: #00ff00;
+            cursor: pointer;
+        }
+        paper-icon-button#menu-icon {
+            height: 24px;
+            color: #00ff00;
+        }
+    </style>
+    <template>
+        <template is="dom-if" if="{{queryMatches}}" restamp="true">
+            <paper-menu-button icon="menu" horizontal-align="right">
+                <paper-icon-button id="menu-icon" icon="menu" class="dropdown-trigger"></paper-icon-button>
+                <paper-menu class="dropdown-content">
+                    <content></content>
+                </paper-menu>
+            </paper-menu-button>
+         </template>
+         <content></content>
+         <iron-media-query
+            query="{{query}}"
+            query-matches="{{queryMatches}}">
+        </iron-media-query>
+    </template>
+</dom-module>
+<script>
+    Polymer({
+        is: 'gg-menu',
+        properties: {
+            query: String
+        }
+    });
+</script>
