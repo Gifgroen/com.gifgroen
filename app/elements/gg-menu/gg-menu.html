@@ -5,42 +5,37 @@
     <style>
         :host {
             display: block;
-            margin: 0 8px;
-        }
-        paper-icon-button {
-            height: 24px;
-            color: #00ff00;
         }
         paper-menu {
             background: transparent;
-            margin-top: 10px;
         }
-        paper-menu-button[icon=menu] ::content a {
+        /* Horizontal on big screen */
+        paper-menu ::content paper-item {
+            display: inline-flex;
+            display: -webkit-inline-flex;
+        }
+        /* Vertical on small screen */
+        paper-menu-button[icon=menu] ::content paper-item {
             display: flex !important;
+            display: -webkit-flex !important;
         }
-
-        ::content a {
-            /*line-height: 58px !important;*/
-            font-size: 18px;
+        ::content paper-item a {
             color: #666666;
-            padding: 8px;
             text-decoration: none;
-        }
-        ::content a:hover {
-            color: #00ff00;
-            cursor: pointer;
         }
     </style>
     <template>
         <template is="dom-if" if="{{queryMatches}}" restamp="true">
             <paper-menu-button icon="menu" horizontal-align="right">
                 <paper-icon-button icon="menu" class="dropdown-trigger"></paper-icon-button>
-                <paper-menu class="dropdown-content">
+                <paper-menu selected="{{selected}}" class="dropdown-content">
                     <content></content>
                 </paper-menu>
             </paper-menu-button>
          </template>
-         <paper-menu><content></content></paper-menu>
+         <paper-menu selected="{{selected}}">
+             <content></content>
+         </paper-menu>
          <iron-media-query
             query="{{query}}"
             query-matches="{{queryMatches}}">
