@@ -3,9 +3,6 @@
 
 <dom-module id="gg-menu">
     <style>
-        :host {
-            display: block;
-        }
         paper-menu {
             background: transparent;
         }
@@ -19,10 +16,6 @@
             display: flex !important;
             display: -webkit-flex !important;
         }
-        ::content paper-item a {
-            color: #666666;
-            text-decoration: none;
-        }
     </style>
     <template>
         <template is="dom-if" if="{{queryMatches}}" restamp="true">
@@ -33,9 +26,11 @@
                 </paper-menu>
             </paper-menu-button>
          </template>
-         <paper-menu selected="{{selected}}">
-             <content></content>
-         </paper-menu>
+         <template is="dom-if" if="{{!queryMatches}}" restamp="true">
+             <paper-menu selected="{{selected}}">
+                 <content></content>
+             </paper-menu>
+         </template>
          <iron-media-query
             query="{{query}}"
             query-matches="{{queryMatches}}">
