@@ -1,8 +1,8 @@
 <dom-module id="gg-menu">
     <style>
-        paper-menu {
-            background: transparent;
-        }
+        /*paper-menu {*/
+            /*background: transparent;*/
+        /*}*/
         /* Horizontal on big screen */
         paper-menu ::content paper-item {
             display: inline-flex;
@@ -12,6 +12,12 @@
         paper-menu-button[icon=menu] ::content paper-item {
             display: flex !important;
             display: -webkit-flex !important;
+        }
+        paper-menu {
+            padding: 4px;
+            --paper-menu-focused-item-after: {
+                background: transparent;
+            };
         }
     </style>
     <template>

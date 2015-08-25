@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="">
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Personal website">
-    <meta name="viewport" content="width=device-width, height=device-height">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>gifgroen.com</title>
 
@@ -18,7 +18,7 @@
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Polymer Starter Kit">
+    <meta name="application-name" content="Gifgroen.com">
     <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
     <!-- Add to homescreen for Safari on iOS -->
@@ -38,7 +38,7 @@
     <!-- endbuild-->
 
     <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
-    <script src="../bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
     <!-- endbuild -->
 
     <!-- will be replaced with elements/elements.vulcanized.html -->
@@ -46,13 +46,7 @@
     <!-- endreplace-->
 
     <style>
-        iron-image#my-picture {
-            margin: -58px 16px;
-            background: #ff00ff;
-        }
-        div#bio {
-            width: 70%;
-        }
+
     </style>
 </head>
 <body unresolved class="fullbleed layout vertical">
@@ -61,25 +55,20 @@
         <slant-box class="paper-header">
             <h1>Gifgroen.com</h1>
             <span class="flex"></span>
-            <gg-menu id="menu" query="max-width: 600px">
-                <paper-item><a href="#">Projects</a></paper-item>
-                <paper-item><a href="#">About</a></paper-item>
-                <paper-item><a href="#">Blog</a></paper-item>
+            <gg-menu query="max-width: 600px">
+                <paper-item>Projects</paper-item>
+                <paper-item>About</paper-item>
+                <paper-item>Blog</paper-item>
             </gg-menu>
         </slant-box>
         <div class="content layout vertical">
-            <gg-rotator></gg-rotator>
-            <slant-box id="about">
-                <iron-image
-                    id="my-picture"
-                    src="../../images/wallhaven.jpg"
-                    style="width: 300px; height 400px;"
-                    sizing="cover"
-                    preload fade>
-                </iron-image>
-                <div id="bio">
-                    Lorizzle we gonna chung dolizzle mammasay mammasa mamma oo sa amizzle, consectetuer crunk uhuh ... yih!. Nullam sizzle velit, crunk volutpizzle, suscipizzle phat, check out this vel, shizzlin dizzle. Pellentesque get down get down fizzle. For sure eros. I saw beyonces tizzles and my pizzle went crizzle izzle crunk dapibus boofron tempizzle yo. Maurizzle sizzle nibh izzle turpizzle. Brizzle izzle tortor.
+            <gg-rotator id="rotator">
+                <div content class="layout horizontal">
+                    <h1>Higlights</h1>
                 </div>
+            </gg-rotator>
+            <slant-box id="about" style="background: red;">
+                Foo
             </slant-box>
         </div>
     </paper-header-panel>

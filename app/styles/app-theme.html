@@ -7,23 +7,30 @@
    */
 
    /* Application theme */
-   :root {
-     /* TODO */
-   }
+    :root {
+       --primary-background-color: #fbfbfb;
+    }
+    slant-box.paper-header {
+        --slant-box-height: 56px;
+        --slant-box-background: #fbfbfb;
+        --slant-box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.5);
+        --slant-box-skew-angle: skewY(-1deg);
+        --slant-box-skew-origin: bottom right;
+    }
+    paper-item:hover {
+        cursor: pointer;
+    }
+    gg-rotator {
+        --rotator-width: 100%;
+        --rotator-height: 280px;
+    }
+    slant-box#about {
+        --slant-box-height: 280px;
+        /*--slant-box-background: #fbfbfb;*/
+        --slant-box-shadow: -5px -5px 10px rgba(128, 128, 128, 0.5);
+        --slant-box-skew-angle: skewY(1deg);
+        --slant-box-skew-origin: bottom right;
 
-   slant-box.paper-header {
-       --slant-box-background: #fbfbfb;
-       --slant-box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.5);
-       --slant-box-skew-angle: skewY(-2deg);
-       --slant-box-skew-origin: bottom right;
-   }
-
-   slant-box#about {
-       --slant-box-height: 280px;
-       --slant-box-background: #fbfbfb;
-       --slant-box-shadow: -5px -5px 10px rgba(128, 128, 128, 0.5);
-       --slant-box-skew-angle: skewY(2deg);
-       --slant-box-skew-origin: bottom right;
-       margin-top: -8px;
+        z-index: 0;
    }
 </style>
