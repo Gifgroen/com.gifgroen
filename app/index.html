@@ -46,7 +46,43 @@
     <!-- endreplace-->
 
     <style>
+        gg-rotator#rotator {
+            z-index: 0;
+        }
+        iron-image#showcase {
+            height: 50%;
+            position: absolute;
+            top: 8%;
+            left: 5%;
+            right: 5%;
+        }
+        h1#title {
+            /*width: 35.0%;*/
+            position: absolute;
+            bottom: 28%;
+            left: 16%;
+            right: 16%;
+            color: #fbfbfb;
+            background: rgba(0, 255, 0, 0.7);
+            padding: 8px;
+            text-align: center;
+        }
+        slant-box#about {
 
+        }
+        iron-image#me {
+            margin-left: 16px;
+            margin-top: -4%;
+        }
+        div#bio {
+            padding-left: 16px;
+        }
+        div#bio h1 {
+            margin: 0;
+        }
+        div#bio div {
+            margin-top: 8px;
+        }
     </style>
 </head>
 <body unresolved class="fullbleed layout vertical">
@@ -57,18 +93,21 @@
             <span class="flex"></span>
             <gg-menu query="max-width: 600px">
                 <paper-item>Projects</paper-item>
-                <paper-item>About</paper-item>
+                <paper-item><a href="#about">About</a></paper-item>
                 <paper-item>Blog</paper-item>
             </gg-menu>
         </slant-box>
-        <div class="content layout vertical">
+        <div class="layout vertical">
             <gg-rotator id="rotator">
-                <div content class="layout horizontal">
-                    <h1>Higlights</h1>
-                </div>
+                <iron-image src="../../images/devices.png" sizing="contain" id="showcase"></iron-image>
+                <h1 id="title">Try interesting ideas on devices!</h1>
             </gg-rotator>
-            <slant-box id="about" style="background: red;">
-                Foo
+            <slant-box id="about">
+                <iron-image id="me" src="../../images/me.jpg"></iron-image>
+                <div id="bio" class="layout vertical">
+                    <h1>Hi there!</h1>
+                    <div>I like to show you what I'm doing!</div>
+                </div>
             </slant-box>
         </div>
     </paper-header-panel>
