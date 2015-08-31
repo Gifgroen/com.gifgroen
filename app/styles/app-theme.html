@@ -10,17 +10,21 @@
     :root {
        --primary-background-color: #fbfbfb;
     }
+    paper-header-panel {
+        background: var(--primary-background-color);
+    }
     slant-box.paper-header {
         --slant-box-height: 56px;
         --slant-box-background: #fbfbfb;
         --slant-box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.5);
-        --slant-box-skew-angle: skewY(-2deg);
+        --slant-box-skew-angle: skewY(-1deg);
         --slant-box-skew-origin: bottom right;
 
         z-index: 1;
     }
     paper-item a {
         text-decoration: none;
+        color: black;
     }
     paper-item:hover {
         cursor: pointer;

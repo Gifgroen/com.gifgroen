@@ -46,7 +46,7 @@
     <!-- endreplace-->
 
     <style>
-        gg-rotator#rotator {
+        gg-rotator#projects {
             z-index: 0;
         }
         iron-image#showcase {
@@ -60,8 +60,8 @@
             /*width: 35.0%;*/
             position: absolute;
             bottom: 28%;
-            left: 16%;
-            right: 16%;
+            left: 20%;
+            right: 20%;
             color: #fbfbfb;
             background: rgba(0, 255, 0, 0.7);
             padding: 8px;
@@ -71,17 +71,75 @@
 
         }
         iron-image#me {
+            width: 25%;
             margin-left: 16px;
             margin-top: -4%;
         }
         div#bio {
+            width: 100%;
             padding-left: 16px;
         }
-        div#bio h1 {
+        div#bio h2 {
             margin: 0;
         }
         div#bio div {
             margin-top: 8px;
+        }
+        div#social-bar {
+            margin-left: 16px;
+            position: absolute;
+            right: 0;
+        }
+        iron-icon.social {
+            margin: 0 8px;
+            width: 50px;
+            height: 50px;
+        }
+        iron-icon.social {
+            will-change: transform;
+            transition: transform .1s;
+        }
+        iron-icon.social:hover {
+            cursor: pointer;
+            transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+        }
+        iron-icon#facebook {
+            color: #3B5998;
+        }
+        iron-icon#twitter {
+            color: #4099ff;
+        }
+        iron-icon#google-plus {
+            color: #d34836;
+        }
+        iron-icon#linkedin {
+            color: #0077b5;
+        }
+
+        div#area-of-interest {
+            margin-top: 16px;
+            padding: 16px;
+            background: #00ff00;
+        }
+        a.interest {
+            width: calc(100% / 3);
+            text-align: center;
+            color: black;
+            text-decoration: none;
+        }
+        a.interest iron-icon {
+            height: 100px;
+            width: 100%;
+        }
+        a.interest h1 {
+            margin: 0;
+        }
+
+        div#area-highlight {
+            background: orange;
+            text-align: center;
+            height: 200px;
         }
     </style>
 </head>
@@ -92,23 +150,50 @@
             <h1>Gifgroen.com</h1>
             <span class="flex"></span>
             <gg-menu query="max-width: 600px">
-                <paper-item>Projects</paper-item>
+                <paper-item><a href="#projects">Projects</a></paper-item>
                 <paper-item><a href="#about">About</a></paper-item>
-                <paper-item>Blog</paper-item>
+                <paper-item><a hred="blog">Blog</a></paper-item>
             </gg-menu>
         </slant-box>
         <div class="layout vertical">
-            <gg-rotator id="rotator">
+            <gg-rotator id="projects">
                 <iron-image src="../../images/devices.png" sizing="contain" id="showcase"></iron-image>
-                <h1 id="title">Try interesting ideas on devices!</h1>
+                <h1 id="title">Highlights!</h1>
             </gg-rotator>
             <slant-box id="about">
-                <iron-image id="me" src="../../images/me.jpg"></iron-image>
+                <iron-image sizing="contain" id="me" src="../../images/me.jpg"></iron-image>
                 <div id="bio" class="layout vertical">
-                    <h1>Hi there!</h1>
-                    <div>I like to show you what I'm doing!</div>
+                    <h2>Hi there, my name is Karsten</h2>
+                    <div>I'm a software developer from the Netherlands. I would like to show you what my interests are and what I'm doing right now.</div>
+                    <!-- <div id="social-bar" class="layout horizontal">
+                        <a href="https://facebook.com/karsten.westra"><iron-icon class="social" id="facebook" icon="gg-icons:facebook"></iron-icon></a>
+                        <a href="https://twitter.com/gifgroen"><iron-icon class="social" id="twitter" icon="gg-icons:twitter"></iron-icon></a>
+                        <a href="https://plus.google.com/u/1/100814547912863780833/about"><iron-icon class="social" id="google-plus" icon="gg-icons:google-plus"></iron-icon></a>
+                        <a href="https://nl.linkedin.com/in/karstenwestra"><iron-icon class="social" id="linkedin" icon="gg-icons:linkedin"></iron-icon></a>
+                    </div> -->
                 </div>
             </slant-box>
+        </div>
+        <div id="area-of-interest" class="layout horizontal">
+            <a href="#projects/apps" class="interest">
+                <iron-icon icon="android"></iron-icon>
+                <h1>Apps</h1>
+            </a>
+            <a href="#projects/web" class="interest">
+                <iron-icon icon="av:web"></iron-icon>
+                <h1>Web</h1>
+            </a>
+            <a href="#projects/games" class="interest">
+                <iron-icon icon="av:games"></iron-icon>
+                <h1>Games</h1>
+            </a>
+        </div>
+        <div id="area-highlight">
+            <google-youtube
+                video-id="zBVr9NyAfVM"
+                height="800px"
+                width="100%">
+            </google-youtube>
         </div>
     </paper-header-panel>
 

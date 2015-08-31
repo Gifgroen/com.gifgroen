@@ -17,7 +17,8 @@
         "iron-elements": "PolymerElements/iron-elements#1.0.0",
         "paper-elements": "PolymerElements/paper-elements#1.0.1",
         "paper-menu-button": "PolymerElements/paper-menu-button#1.0.0",
-        "platinum-sw": "PolymerElements/platinum-sw#~1.0.2"
+        "platinum-sw": "PolymerElements/platinum-sw#~1.0.2",
+        "google-youtube": "GoogleWebComponents/google-youtube#1.1.2"
     },
     "devDependencies": {
         "web-component-tester": "*",
